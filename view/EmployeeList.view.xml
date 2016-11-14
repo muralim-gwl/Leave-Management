@@ -34,9 +34,10 @@
 <mvc:View controllerName="sap.ui.demo.wt.controller.EmployeeList" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
 	<App>
 		<pages>
-			<Page id="oPage" title="Products Page" class="marginBoxContent">
+			<Page id="oPage" title="Employee List" class="marginBoxContent">
 				<content>
 					<Table id="idProductsTable" items="{emp>/Employees}">
+
 						<columns>
 							<Column>
 								<Label text="Id"/>
@@ -45,17 +46,26 @@
 								<Label text="Name"/>
 							</Column>
 							<Column>
-								<Label text="Add"/>
+								<Label text="Total"/>
 							</Column>
 							<Column>
-								<Label text="Delete"/>
+								<Label text="Balance"/>
+							</Column>
+							<Column>
+								<Label text="Action"/>
 							</Column>
 						</columns>
-						<items>
+						<items >
 							<ColumnListItem>
 								<cells>
+<<<<<<< HEAD
 									<Text text="{emp>id}"/>
 									<Text text="{emp>name}"/>
+=======
+									<Text text="{employee>/id}"/>
+									<Text text="{employee>/name}"/>
+									<!-- <Text text="{employee>/total_plan_leaves + employee>/total_sick_leaves}" -->
+>>>>>>> origin/master
 									<core:Icon src="sap-icon://add" press="onAdd"/>
 									<core:Icon src="sap-icon://delete" press="onDelete"/>
 								</cells>

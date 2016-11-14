@@ -16,6 +16,47 @@ sap.ui.define([
             // call the init function of the parent
             UIComponent.prototype.init.apply(this, arguments);
 
+            // var data=[
+            //          {
+            //            "id":"1",
+            //            "name":"Bhawani singh",
+            //            "designation":"SSE",
+            //            "total_plan_leaves":"13",
+            //            "total_sick_leaves":"5",
+            //            "total_plan_taken":"5",
+            //            "total_sick_taken":"2",
+            //            "leave_dates" :[
+            //                         {
+            //                           "applied_on":"20-12-2016",
+            //                           "number_of_days":"2",
+            //                           "type":"planned",
+            //                           "status":"approved"
+            //                         }
+            //
+            //               ]
+            //          },
+            //          {
+            //            "id":"2",
+            //            "name":"Arjun singh",
+            //            "designation":"SSE",
+            //            "total_plan_leaves":"13",
+            //            "total_sick_leaves":"5",
+            //            "total_plan_taken":"5",
+            //            "total_sick_taken":"2",
+            //            "leave_dates" :[
+            //                         {
+            //                           "applied_on":"20-12-2016",
+            //                           "number_of_days":"2",
+            //                           "type":"planned",
+            //                           "status":"approved"
+            //                         }
+            //
+            //               ]
+            //          }
+            //  ];
+            // firebase.database().ref('employees/').set(data);
+
+
             // set data model
             // var oData = {
             // 	recipient: {
