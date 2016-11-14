@@ -1,15 +1,69 @@
-<mvc:View
-	id="sample1"
-	controllerName="sap.ui.demo.wt.controller.EmployeeList"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<!-- <Page title="{i18n>homePageTitle}">
-		<headerContent>
-			<Button
-				icon="sap-icon://hello-world"
-				press="onOpenDialog"/>
-		</headerContent>
-
+<!-- <mvc:View controllerName="sap.ui.demo.wt.controller.EmployeeList" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Page id="oPage" title="Products Page" class="marginBoxContent">
+		<content>
+			<Table id="idProductsTable" items="{/}">
+				<columns>
+					<Column>
+						<Label text="Product"/>
+					</Column>
+					<Column>
+						<Label text="Weight"/>
+					</Column>
+					<Column>
+						<Label text="Add"/>
+					</Column>ss
+					<Column>
+						<Label text="Delete"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{Product}"/>
+							<Text text="{Weight}"/>
+							<core:Icon src="sap-icon://add" press="onAdd"/>
+							<core:Icon src="sap-icon://delete" press="onDelete"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
 	</Page>
-	<Panel id="panelXml"></Panel> -->
+</mvc:View> -->
+
+<mvc:View controllerName="sap.ui.demo.wt.controller.EmployeeList" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
+	<App>
+		<pages>
+			<Page id="oPage" title="Products Page" class="marginBoxContent">
+				<content>
+					<Table id="idProductsTable" items="{/}">
+						<columns>
+							<Column>
+								<Label text="Product"/>
+							</Column>
+							<Column>
+								<Label text="Weight"/>
+							</Column>
+							<Column>
+								<Label text="Add"/>
+							</Column>
+							<Column>
+								<Label text="Delete"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Product}"/>
+									<Text text="{Weight}"/>
+									<core:Icon src="sap-icon://add" press="onAdd"/>
+									<core:Icon src="sap-icon://delete" press="onDelete"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>
