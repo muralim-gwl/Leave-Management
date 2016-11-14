@@ -1,36 +1,3 @@
-<!-- <mvc:View controllerName="sap.ui.demo.wt.controller.EmployeeList" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<Page id="oPage" title="Products Page" class="marginBoxContent">
-		<content>
-			<Table id="idProductsTable" items="{/}">
-				<columns>
-					<Column>
-						<Label text="Product"/>
-					</Column>
-					<Column>
-						<Label text="Weight"/>
-					</Column>
-					<Column>
-						<Label text="Add"/>
-					</Column>ss
-					<Column>
-						<Label text="Delete"/>
-					</Column>
-				</columns>
-				<items>
-					<ColumnListItem>
-						<cells>
-							<Text text="{Product}"/>
-							<Text text="{Weight}"/>
-							<core:Icon src="sap-icon://add" press="onAdd"/>
-							<core:Icon src="sap-icon://delete" press="onDelete"/>
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
-		</content>
-	</Page>
-</mvc:View> -->
-
 <mvc:View controllerName="sap.ui.demo.wt.controller.EmployeeList" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
 	<App>
 		<pages>
@@ -58,14 +25,8 @@
 						<items >
 							<ColumnListItem>
 								<cells>
-<<<<<<< HEAD
 									<Text text="{emp>id}"/>
 									<Text text="{emp>name}"/>
-=======
-									<Text text="{employee>/id}"/>
-									<Text text="{employee>/name}"/>
-									<!-- <Text text="{employee>/total_plan_leaves + employee>/total_sick_leaves}" -->
->>>>>>> origin/master
 									<core:Icon src="sap-icon://add" press="onAdd"/>
 									<core:Icon src="sap-icon://delete" press="onDelete"/>
 								</cells>

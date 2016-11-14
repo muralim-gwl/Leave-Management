@@ -10,17 +10,17 @@ sap.ui.define([
 
     return Controller.extend("sap.ui.demo.wt.controller.EmployeeList", {
         onInit: function(onEvent) {
+            var appref = this;
+            var emp_data;
+            firebase.database().ref('/employees/').once('value').then(function(snapshot) {
+              emp_data = snapshot.val();
+              var oModel = new JSONModel();
+              console.log(oModel);
+                oModel.setData({"Employees":emp_data});
+                appref.getView().setModel(oModel,'emp');
+     
+            });
 
-            var oModel = new JSONModel();
-            oModel.loadData("Employees.json");
-           // console.log(oModel);
-            // oModel.setData(dataObject);
-            this.getView().setModel(oModel,'emp');
-            //  	this.setModel(oModel);
-            // var oModel = new JSONModel();
-            // oModel.setData(dataObject);
-            // this.getView().setModel(oModel);
-            // //  	this.setModel(oModel);
 
         },
 

@@ -5,8 +5,9 @@ sap.ui.define([
 
 	return Controller.extend("sap.ui.demo.wt.controller.App", {
 
-		onSubmit:function() {
-				
+		onSubmit:function(oEvent) {
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("employee-list");
 		},
 
 		onOpenDialog: function () {

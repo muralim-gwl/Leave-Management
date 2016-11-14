@@ -4,6 +4,7 @@
 			<Button icon="sap-icon://hello-world" press="onOpenDialog"/>
 		</headerContent>
 		<content>
+			<!-- <mvc:XMLView viewName="sap.ui.demo.wt.view.EmployeeList"/> -->
 			<Input id="userID" value="User123"/>
 			<Input id="password" value="*****"/>
 			<Button text="Login" press="onSubmit"/>
