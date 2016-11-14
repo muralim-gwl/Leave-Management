@@ -36,13 +36,13 @@
 		<pages>
 			<Page id="oPage" title="Products Page" class="marginBoxContent">
 				<content>
-					<Table id="idProductsTable" items="{/}">
+					<Table id="idProductsTable" items="{emp>/Employees}">
 						<columns>
 							<Column>
-								<Label text="Product"/>
+								<Label text="Id"/>
 							</Column>
 							<Column>
-								<Label text="Weight"/>
+								<Label text="Name"/>
 							</Column>
 							<Column>
 								<Label text="Add"/>
@@ -54,8 +54,8 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<Text text="{Product}"/>
-									<Text text="{Weight}"/>
+									<Text text="{emp>id}"/>
+									<Text text="{emp>name}"/>
 									<core:Icon src="sap-icon://add" press="onAdd"/>
 									<core:Icon src="sap-icon://delete" press="onDelete"/>
 								</cells>

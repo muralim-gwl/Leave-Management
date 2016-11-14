@@ -10,19 +10,21 @@ sap.ui.define([
 
     return Controller.extend("sap.ui.demo.wt.controller.EmployeeList", {
         onInit: function(onEvent) {
-            var dataObject = [{
-                Product: "Gladiator MX",
-                Weight: "321"
-            }, {
-                Product: "Hurricane GX",
-                Weight: "588"
-            }, {
-                Product: "Webcam",
-                Weight: "700"
-            }];
+            // var dataObject = [{
+            //     Product: "Gladiator MX",
+            //     Weight: "321"
+            // }, {
+            //     Product: "Hurricane GX",
+            //     Weight: "588"
+            // }, {
+            //     Product: "Webcam",
+            //     Weight: "700"
+            // }];
             var oModel = new JSONModel();
-            oModel.setData(dataObject);
-            this.getView().setModel(oModel);
+            oModel.loadData("Employees.json");
+           // console.log(oModel);
+            // oModel.setData(dataObject);
+            this.getView().setModel(oModel,'emp');
             //  	this.setModel(oModel);
         },
 
