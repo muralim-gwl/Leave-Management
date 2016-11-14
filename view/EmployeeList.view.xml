@@ -34,28 +34,32 @@
 <mvc:View controllerName="sap.ui.demo.wt.controller.EmployeeList" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" class="viewPadding">
 	<App>
 		<pages>
-			<Page id="oPage" title="Products Page" class="marginBoxContent">
+			<Page id="oPage" title="Employee List" class="marginBoxContent">
 				<content>
-					<Table id="idProductsTable" items="{/}">
+					<Table id="idProductsTable" items="{path:'employee>/Employees'}">
 						<columns>
 							<Column>
-								<Label text="Product"/>
+								<Label text="Id"/>
 							</Column>
 							<Column>
-								<Label text="Weight"/>
+								<Label text="Name"/>
 							</Column>
 							<Column>
-								<Label text="Add"/>
+								<Label text="Total"/>
 							</Column>
 							<Column>
-								<Label text="Delete"/>
+								<Label text="Balance"/>
+							</Column>
+							<Column>
+								<Label text="Action"/>
 							</Column>
 						</columns>
-						<items>
+						<items >
 							<ColumnListItem>
 								<cells>
-									<Text text="{Product}"/>
-									<Text text="{Weight}"/>
+									<Text text="{employee>/id}"/>
+									<Text text="{employee>/name}"/>
+									<!-- <Text text="{employee>/total_plan_leaves + employee>/total_sick_leaves}" -->
 									<core:Icon src="sap-icon://add" press="onAdd"/>
 									<core:Icon src="sap-icon://delete" press="onDelete"/>
 								</cells>

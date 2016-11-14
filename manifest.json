@@ -38,6 +38,10 @@
                 "settings": {
                     "bundleName": "sap.ui.demo.wt.i18n.i18n"
                 }
+            },
+            "employee": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "Employees.json"
             }
         },
         "resources": {
